@@ -9,6 +9,7 @@ import AboutBox from './components/Home/AboutBox';
 import CalendarBox from './components/Home/CalendarBox';
 import MusicBox from './components/Home/MusicBox';
 import SocialBox from './components/Home/SocialBox';
+import Projects from './components/Projects/Project';
 
 function App() {
   const [activePage, setActivePage] = useState('Home');
@@ -43,9 +44,7 @@ function App() {
         )}
 
         {activePage === 'Projects' && (
-          <div className="text-white font-mono">
-            Projects page coming soon…
-          </div>
+          <Projects/>
         )}
 
         {activePage === 'Achievements' && (
